@@ -32,7 +32,7 @@ public class TestQueue {
 	}
 	
 	/**
-	 * Enqueues objects into a newly created queue and expects size to be the number of elements added  
+	 * Enqueues objects into a newly created queue and expects elements to dequeuing in the same order they were enqueued  
 	 */
 	@Test
 	public void test_dequeues() {
@@ -45,12 +45,6 @@ public class TestQueue {
 			System.out.println(i + "" + toEnqueue[i]);
 			Assert.assertEquals(toEnqueue[i],queue.dequeue());
 		}
-		/*
-		for (int i = toEnqueue.length - 1; i >= 0 ; i--) {
-			System.out.println(i + "" + toEnqueue[i]);
-			Assert.assertEquals(queue.dequeue(),toEnqueue[i]);
-		}
-		*/
 		Assert.assertEquals(queue.getSize(), 0);
 	}
 
