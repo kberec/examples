@@ -12,7 +12,7 @@ import org.junit.Test;
  *
  */
 public class TestIntSorter {
-	private static final int ARRAYSIZE = 100;
+	private static final int ARRAYSIZE = 1000;
 	private static int[] a;
 	
 	@Before
